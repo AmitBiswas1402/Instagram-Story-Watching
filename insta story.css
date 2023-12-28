@@ -5,23 +5,25 @@
 
 html, body{
     height: 100%; width: 100%;
-    background-color: rgb(82, 184, 243);
+    background: linear-gradient(-135deg, rgb(247, 196, 29), orange, rgb(223, 49, 78), purple, blue);
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
 .card{
-    height: 500px; width: 300px;
+    height: 550px; width: 320px;
     background-color: aliceblue;
-    border-radius: 10px;
-    border: 1px solid black;
+    border-radius: 15px;
+    overflow: hidden;
+    border: 5px solid white;
     position: relative;
+    overflow: hidden;
 }
 
 .stories{
     height: 120px; width: 100%;
-    padding: 20px;
+    padding: 15px;
     white-space: nowrap;
     overflow-x: auto;
     overflow-y: hidden;
@@ -33,7 +35,7 @@ html, body{
 
 .story{
     height: 75px; width: 75px;
-    background: linear-gradient(rgb(247, 196, 29), orange, rgb(223, 49, 78), purple, blue);
+    background: linear-gradient(135deg, rgb(247, 196, 29), orange, rgb(223, 49, 78), purple, blue);
     border-radius: 50%;
     padding: 4px;
     overflow: hidden;
@@ -53,4 +55,5 @@ html, body{
     background-size: cover;
     background-position: center;
     position: absolute;
+    display: none;
 }
